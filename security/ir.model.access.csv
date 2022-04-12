@@ -1,0 +1,8 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+
+access_studio_list,access.studio.list,model_studio_list,,1,1,1,1
+access_studio_photo,access.studio.photo,model_studio_photo,,1,1,1,1
+access_studio_video,access.studio.video,model_studio_video,,1,1,1,1
+access_studio_order,access.studio.order,model_studio_order,,1,1,1,1
+access_studio_orderlistdetail,access.studio.orderlistdetail,model_studio_orderlistdetail,,1,1,1,1
+access_studio_akunting,access.studio.akunting,model_studio_akunting,,1,1,1,1

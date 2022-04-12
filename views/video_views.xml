@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- studio.video tree view -->
+    <record id="studio_video_view_tree" model="ir.ui.view">
+        <field name="name">Videographer</field>
+        <field name="model">studio.photo</field>
+        <field name="arch" type="xml">
+            <tree>
+                <!-- Add your fields here -->
+                <field name="name"/>
+                <field name="status"/>
+                <field name="harga"/>                
+            </tree>
+        </field>
+    </record>
+
+    <!-- studio.video form view -->
+    <record id="studio_video_view_form" model="ir.ui.view">
+        <field name="name">Form Videographer</field>
+        <field name="model">studio.video</field>
+        <field name="arch" type="xml">
+            <form string="Videographer">
+                <sheet>
+                    <group>
+                        <!-- Add your fields here -->
+                        <field name="name"/>
+                        <field name="status" />
+                        <field name="harga"/>                        
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <!-- studio.video action window -->
+    <record id="studio_video_action" model="ir.actions.act_window">
+        <field name="name">Videographer</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">studio.video</field>
+        <field name="view_mode">tree,form</field>        
+    </record>
+    <!-- This Menu Item must have a parent and an action -->
+    <menuitem 
+        id="studio_video_menu_act" 
+        name="Videographer" 
+        parent="studio_service_menu_categ" 
+        action="studio_video_action" 
+        sequence="30"/>
+
+</odoo>

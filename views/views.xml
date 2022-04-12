@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="octo_studio.list">
+      <field name="name">OctoStudio list</field>
+      <field name="model">octo_studio.octo_studio</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="octo_studio.action_window">
+      <field name="name">OctoStudio window</field>
+      <field name="res_model">octo_studio.octo_studio</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="octo_studio.action_server">
+      <field name="name">OctoStudio server</field>
+      <field name="model_id" ref="model_octo_studio_octo_studio"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="OctoStudio" id="octo_studio.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="octo_studio.menu_1" parent="octo_studio.menu_root"/>
+    <menuitem name="Menu 2" id="octo_studio.menu_2" parent="octo_studio.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="octo_studio.menu_1_list" parent="octo_studio.menu_1"
+              action="octo_studio.action_window"/>
+    <menuitem name="Server to list" id="octo_studio" parent="octo_studio.menu_2"
+              action="octo_studio.action_server"/>
+-->
+  </data>
+</odoo>
